@@ -3,7 +3,7 @@ aws_dbt_snowflake_project:
     dev:
       account: LEPWKFJ-XI54981
       database: AIRBNB
-      password: Meutk@16109083
+      password: *********
       role: ACCOUNTADMIN
       schema: DBT_SCHEMA
       threads: 1
