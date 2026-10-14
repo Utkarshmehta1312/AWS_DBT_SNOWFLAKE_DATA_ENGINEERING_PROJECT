@@ -60,18 +60,18 @@ DESC STAGE s3_ext_stage
 COPY INTO HOSTS
 FRoM @s3_ext_stage
 FILES = ('hosts.csv')
-CREDENTIALS=(aws_key_id = 'AKIASBIURWY22UJUTYRC', aws_secret_key = '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');
+CREDENTIALS=(aws_key_id = '*****', aws_secret_key = '*****');
 
 
 COPY INTO BOOKINGS
 FRoM @s3_ext_stage
 FILES = ('bookings.csv') 
-CREDENTIALS=(aws_key_id = 'AKIASBIURWY22UJUTYRC', aws_secret_key = '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');
+CREDENTIALS=(aws_key_id = '*****', aws_secret_key = '*****');
 
 COPY INTO LISTINGS
 FRoM @s3_ext_stage
 FILES = ('listings.csv')
-CREDENTIALS=(aws_key_id = 'AKIASBIURWY22UJUTYRC', aws_secret_key = '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');
+CREDENTIALS=(aws_key_id = '*****', aws_secret_key = '*****');
 
 
 
@@ -84,7 +84,3 @@ TRUNCATE TABLE LISTINGS
 
 
 
--- DROP stage s3_ext_stage
-
--- Access key= AKIASBIURWY22UJUTYRC
---Secret access key= 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 
